@@ -1,0 +1,142 @@
+body {
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #deb2eab6;
+
+}
+
+
+#otherPokemon {
+    margin-top: 4vh;
+    color:rgb(0, 0, 0);
+    border-radius: 4vh;
+    display: flex;
+    background-color: rgb(162, 104, 149);
+    height: 50vh;
+    flex-direction: column;
+    align-items:end;
+    margin-right: 4vh;
+    box-shadow: rgb(159, 36, 165) 1px 0 10px;
+}
+
+
+.title {
+    margin-top: 8vh;
+    color: rgba(143, 107, 151, 0.899);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: xx-large;
+    position: relative;
+    text-shadow: rgb(165, 36, 36) 1px 0 10px;
+    animation: moveUpDown 2s infinite ease-in-out;
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.locations {
+    height: 68vh;
+    margin: 8vh;
+    background-color: rgba(10, 10, 10, 0.229);
+    box-shadow: rgb(230, 30, 190) 1px 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    overflow-y: scroll;
+    font-size: larger;
+    border-radius: 4vh;
+    list-style: none;
+    color: rgba(255, 127, 242, 0.403);
+}
+
+
+.locationElement:hover {
+    color: rgba(255, 127, 242, 0.878);
+}
+
+.pokemon {
+    width: 38vw;
+    height: 18vw;
+    font-size: medium;
+    background-color: rgba(161, 204, 91, 0.484);
+    margin-top: 2vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    border-radius: 4vh;
+    color: rgb(71, 32, 32);
+    display: flex;
+    box-shadow: rgb(133, 165, 36) 1px 0 3px;
+}
+
+#fightButton {
+    background-color: #ba5656;
+    width: 100%;
+    margin: 0vw;
+    margin-top: 6vh;
+    color: rgb(255, 206, 127);
+    font-weight:bolder
+}
+
+#fightButton:hover{
+    box-shadow: rgb(195, 255, 16) 1px 0 10px;
+
+}
+
+.pokemon:hover {
+    box-shadow: rgb(133, 165, 36) 1px 0 15px;
+    background-color: rgba(147, 197, 60, 0.951);
+}
+
+.pokemon_sprite {
+    width: 20vh;
+    height: 20vh;
+}
+
+
+img:hover {
+    transform: scale(1.1);
+    animation: moveUpDown 1s infinite ease-in-out;
+}
+
+#myPokemones {
+    width: 55vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+}
+
+#fight {
+    display: flex;
+    font-size: large;
+}
+
+#otherPokemon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    background-color: rgba(65, 207, 162, 0.625);
+    color: rgba(37, 31, 31, 0.385);
+    margin: 4vh;
+}
+
+button:hover {
+    background-color: rgb(65, 207, 162);
+    color: rgb(75, 46, 46);
+}
+
